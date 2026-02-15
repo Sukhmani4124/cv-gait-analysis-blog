@@ -1,0 +1,15 @@
+site_name: Human Gait Analysis Blog
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.expand
+    - content.code.copy
+
+nav:
+  - Home: index.md
+
+  - Project Blogs:
+      - Project Journey: project-journey.md
+      
