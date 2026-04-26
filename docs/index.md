@@ -19,3 +19,4 @@ This site documents our complete project journey, including:
 - Evaluation and results
 
 Use the navigation panel on the left to explore each blog and follow our progress step by step.
+
