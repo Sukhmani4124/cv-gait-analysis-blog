@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../project-journey/">
       
       
-        <link rel="next" href="../second/">
+        <link rel="next" href="../third/">
       
       
         
@@ -23,7 +23,7 @@
     
     
       
-        <title>Project Journey - Human Gait Analysis Blog</title>
+        <title>Video Preprocessing - Human Gait Analysis Blog</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#beginning-our-computer-vision-project-from-ideas-to-direction" class="md-skip">
+        <a href="#video-preprocessing-pipeline-for-gait-analysis" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Project Journey
+              Video Preprocessing
             
           </span>
         </div>
@@ -274,6 +274,34 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../project-journey/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Project Journey
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -293,7 +321,7 @@
   <span class="md-ellipsis">
     
   
-    Project Journey
+    Video Preprocessing
   
 
     
@@ -311,7 +339,7 @@
   <span class="md-ellipsis">
     
   
-    Project Journey
+    Video Preprocessing
   
 
     
@@ -337,10 +365,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#moving-towards-gait-analysis" class="md-nav__link">
+  <a href="#introduction" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Moving Towards Gait Analysis
+        Introduction
       
     </span>
   </a>
@@ -348,10 +376,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#our-approach" class="md-nav__link">
+  <a href="#multi-stage-visualization" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Our Approach
+        Multi-Stage Visualization
       
     </span>
   </a>
@@ -359,10 +387,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#why-this-direction-made-sense" class="md-nav__link">
+  <a href="#subject-localization-in-original-frames" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Why This Direction Made Sense
+        Subject Localization in Original Frames
       
     </span>
   </a>
@@ -370,10 +398,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#challenges-we-anticipate" class="md-nav__link">
+  <a href="#intensity-based-frame-representation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Challenges We Anticipate
+        Intensity-Based Frame Representation
       
     </span>
   </a>
@@ -381,10 +409,54 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#whats-ahead" class="md-nav__link">
+  <a href="#binary-silhouette-extraction" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What’s Ahead
+        Binary Silhouette Extraction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#foreground-overlay-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Foreground Overlay Visualization
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#benefits-of-multi-view-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Benefits of Multi-View Processing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#techniques-involved" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Techniques Involved
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusion
       
     </span>
   </a>
@@ -395,34 +467,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../second/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Video Preprocessing
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -546,10 +590,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#moving-towards-gait-analysis" class="md-nav__link">
+  <a href="#introduction" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Moving Towards Gait Analysis
+        Introduction
       
     </span>
   </a>
@@ -557,10 +601,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#our-approach" class="md-nav__link">
+  <a href="#multi-stage-visualization" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Our Approach
+        Multi-Stage Visualization
       
     </span>
   </a>
@@ -568,10 +612,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#why-this-direction-made-sense" class="md-nav__link">
+  <a href="#subject-localization-in-original-frames" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Why This Direction Made Sense
+        Subject Localization in Original Frames
       
     </span>
   </a>
@@ -579,10 +623,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#challenges-we-anticipate" class="md-nav__link">
+  <a href="#intensity-based-frame-representation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Challenges We Anticipate
+        Intensity-Based Frame Representation
       
     </span>
   </a>
@@ -590,10 +634,54 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#whats-ahead" class="md-nav__link">
+  <a href="#binary-silhouette-extraction" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What’s Ahead
+        Binary Silhouette Extraction
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#foreground-overlay-visualization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Foreground Overlay Visualization
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#benefits-of-multi-view-processing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Benefits of Multi-View Processing
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#techniques-involved" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Techniques Involved
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusion
       
     </span>
   </a>
@@ -617,37 +705,63 @@
 
 
 
-<h1 id="beginning-our-computer-vision-project-from-ideas-to-direction">Beginning Our Computer Vision Project: From Ideas to Direction</h1>
-<p>When we started the Computer Vision Lab, our first task wasn’t coding or building models. It was figuring out what kind of real-world problem could actually be explored using classical computer vision techniques. Instead of rushing into development, our team spent time discussing different domains and understanding what was realistically possible within the scope of the course.</p>
-<p>At the beginning, we explored several directions. Some ideas revolved around traffic monitoring and smart surveillance, while others focused on medical imaging. Although these topics sounded exciting, many of them depended heavily on large datasets or deep learning pipelines. Since our goal was to work primarily with classical computer vision methods, we realized that these problems might not be the best fit.</p>
-<p>This pushed us to think differently. Rather than looking for something complex just for the sake of complexity, we wanted a problem where motion, patterns, and visual features could be analyzed in a more interpretable way.</p>
+<h1 id="video-preprocessing-pipeline-for-gait-analysis">Video Preprocessing Pipeline for Gait Analysis</h1>
+<h2 id="introduction">Introduction</h2>
+<p>In a gait analysis system, preprocessing plays a crucial role in preparing raw video data for further analysis. Instead of directly working with unprocessed frames, the system transforms the input step-by-step to isolate meaningful motion information.</p>
+<p>In this implementation, preprocessing is visualized using a multi-panel dashboard that displays four different outputs simultaneously. Each output represents a stage in the transformation from raw video to a refined representation of the walking subject.</p>
 <hr />
-<h2 id="moving-towards-gait-analysis">Moving Towards Gait Analysis</h2>
-<p>During our discussions, we came across the concept of analyzing human walking patterns. The idea of studying gait stood out because walking naturally contains motion, rhythm, and measurable changes over time. It also connects well with topics like background subtraction, feature extraction, and temporal analysis that we were learning in class.</p>
-<p>In many rehabilitation environments, therapists observe how patients walk to understand balance or recovery progress. However, visual observation alone can be inconsistent, especially when trying to compare multiple walking sessions. This made us wonder whether a simple vision-based system could help describe walking patterns more objectively.</p>
+<h2 id="multi-stage-visualization">Multi-Stage Visualization</h2>
+<p>To better understand the processing pipeline, the system generates four synchronized video streams:</p>
+<ol>
+<li>Input Frame with Subject Localization  </li>
+<li>Intensity-Based Frame Representation  </li>
+<li>Binary Silhouette Output  </li>
+<li>Foreground Highlight Overlay  </li>
+</ol>
+<p>Each view provides insight into a specific stage of preprocessing.</p>
 <hr />
-<h2 id="our-approach">Our Approach</h2>
-<p>Instead of building a complicated deep learning system, we decided to design a structured pipeline based on classical computer vision.</p>
-<p>The project begins with collecting walking videos captured from a stable viewpoint. These videos act as the foundation of the system. From there, the focus shifts to processing frames to make motion easier to analyze. This includes reducing noise, simplifying visual information, and isolating the moving subject from the background.</p>
-<p>Once the motion is clear, the next goal is to extract meaningful gait features. Walking is not just a single frame problem; it involves analyzing changes across time. By observing movement patterns across frames, we aim to compute indicators such as walking speed, step frequency, and symmetry in motion.</p>
+<h2 id="subject-localization-in-original-frames">Subject Localization in Original Frames</h2>
+<p>The first output displays the original video with a highlighted region corresponding to the detected subject.</p>
+<p>The system identifies moving regions by separating them from the background and then locating the largest connected region. A bounding box is drawn around this region to indicate the subject’s position.</p>
+<p>This step helps track the subject’s movement and ensures that subsequent processing focuses only on relevant areas.</p>
 <hr />
-<h2 id="why-this-direction-made-sense">Why This Direction Made Sense</h2>
-<p>One of the reasons we chose this problem is that it allows us to apply core computer vision concepts without relying on heavy computation. The emphasis is on understanding motion rather than simply achieving high prediction accuracy.</p>
-<p>Working with classical techniques also helps us better understand how visual features are formed and how movement can be translated into measurable information.</p>
+<h2 id="intensity-based-frame-representation">Intensity-Based Frame Representation</h2>
+<p>The second output simplifies the frame by converting it into an intensity-based format. By removing color information, the system reduces complexity and focuses only on brightness variations.</p>
+<p>In some cases, contrast enhancement techniques are applied to make the subject more distinguishable from the background. This improves the reliability of later processing steps, especially in varying lighting conditions.</p>
 <hr />
-<h2 id="challenges-we-anticipate">Challenges We Anticipate</h2>
-<p>As we begin building the system, we expect several practical challenges:</p>
+<h2 id="binary-silhouette-extraction">Binary Silhouette Extraction</h2>
+<p>The third output presents a binary representation of the subject. In this format, the subject appears as a solid region against a dark background.</p>
+<p>This stage is achieved by separating moving regions and refining the result to remove noise and fill gaps. The result is a clean silhouette that captures the overall shape and posture of the subject.</p>
+<p>This representation is particularly important because it simplifies the data while preserving essential motion characteristics.</p>
+<hr />
+<h2 id="foreground-overlay-visualization">Foreground Overlay Visualization</h2>
+<p>The final output combines the detected foreground with the original frame. The moving subject is highlighted using a colored overlay, allowing direct comparison between the processed result and the original video.</p>
+<p>This visualization serves as a validation step, helping confirm that the subject has been correctly identified and extracted.</p>
+<hr />
+<h2 id="benefits-of-multi-view-processing">Benefits of Multi-View Processing</h2>
+<p>Displaying multiple stages simultaneously provides several advantages:</p>
 <ul>
-<li>Maintaining consistent camera positioning  </li>
-<li>Handling background variations  </li>
-<li>Detecting subtle differences in walking patterns  </li>
-<li>Ensuring the analysis remains stable across multiple videos  </li>
+<li>Improves understanding of how each step contributes to the final result  </li>
+<li>Makes it easier to identify and correct errors  </li>
+<li>Enhances clarity during demonstrations and presentations  </li>
+<li>Provides transparency in the processing pipeline  </li>
 </ul>
-<p>These challenges are part of the learning process and will guide how we refine the pipeline over time.</p>
+<p>This approach ensures that the transformation from raw data to processed output is clearly visible.</p>
 <hr />
-<h2 id="whats-ahead">What’s Ahead</h2>
-<p>This blog marks the starting point of our project journey. In the next posts, we will explore the fundamentals of human gait, the design of our computer vision pipeline, and the steps involved in turning raw video into meaningful analysis.</p>
-<p>The goal is not only to build a working system but also to understand how classical computer vision can be applied to real movement-based problems.</p>
+<h2 id="techniques-involved">Techniques Involved</h2>
+<p>The preprocessing pipeline relies on established computer vision methods, including:</p>
+<ul>
+<li>Background modeling and subtraction  </li>
+<li>Frame simplification  </li>
+<li>Region detection  </li>
+<li>Shape refinement  </li>
+<li>Foreground highlighting  </li>
+</ul>
+<p>These methods are computationally efficient and do not require complex models, making the system suitable for practical use.</p>
+<hr />
+<h2 id="conclusion">Conclusion</h2>
+<p>The preprocessing stage converts raw video into a structured representation that is suitable for gait analysis. By isolating the subject and removing unnecessary information, it lays the foundation for accurate motion analysis.</p>
+<p>The use of multiple synchronized outputs provides a clear view of each processing step, making the system both effective and easy to interpret.</p>
 
 
 
