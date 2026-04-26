@@ -9,10 +9,8 @@
       
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../project-journey/">
       
-      
-        <link rel="next" href="../third/">
       
       
         
@@ -23,7 +21,7 @@
     
     
       
-        <title>Project Journey - Human Gait Analysis Blog</title>
+        <title>Foreground Extraction - Human Gait Analysis Blog</title>
       
     
     
@@ -64,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#beginning-our-computer-vision-project-from-ideas-to-direction" class="md-skip">
+        <a href="#03-extracting-the-foreground-for-gait-analysis" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Project Journey
+              Foreground Extraction
             
           </span>
         </div>
@@ -274,6 +272,34 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../project-journey/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Project Journey
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -293,7 +319,7 @@
   <span class="md-ellipsis">
     
   
-    Project Journey
+    Foreground Extraction
   
 
     
@@ -311,7 +337,7 @@
   <span class="md-ellipsis">
     
   
-    Project Journey
+    Foreground Extraction
   
 
     
@@ -337,10 +363,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#moving-towards-gait-analysis" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Moving Towards Gait Analysis
+        Overview
       
     </span>
   </a>
@@ -348,10 +374,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#our-approach" class="md-nav__link">
+  <a href="#background-subtraction-concept" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Our Approach
+        Background Subtraction Concept
       
     </span>
   </a>
@@ -359,10 +385,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#why-this-direction-made-sense" class="md-nav__link">
+  <a href="#approach-and-methodology" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Why This Direction Made Sense
+        Approach and Methodology
       
     </span>
   </a>
@@ -370,10 +396,82 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#challenges-we-anticipate" class="md-nav__link">
+  <a href="#processing-workflow" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Challenges We Anticipate
+        Processing Workflow
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Processing Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-frame-acquisition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Frame Acquisition
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-background-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Background Comparison
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-initial-foreground-mask-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Initial Foreground Mask Generation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-noise-reduction-and-refinement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Noise Reduction and Refinement
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-silhouette-extraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Silhouette Extraction
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#importance-in-gait-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Importance in Gait Analysis
       
     </span>
   </a>
@@ -381,10 +479,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#whats-ahead" class="md-nav__link">
+  <a href="#output-characteristics" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What’s Ahead
+        Output Characteristics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenges-and-limitations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenges and Limitations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusion
       
     </span>
   </a>
@@ -395,34 +515,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../third/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Foreground Extraction
-  
-
-    
-  </span>
-  
-  
-
-      </a>
     </li>
   
 
@@ -462,10 +554,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#moving-towards-gait-analysis" class="md-nav__link">
+  <a href="#overview" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Moving Towards Gait Analysis
+        Overview
       
     </span>
   </a>
@@ -473,10 +565,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#our-approach" class="md-nav__link">
+  <a href="#background-subtraction-concept" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Our Approach
+        Background Subtraction Concept
       
     </span>
   </a>
@@ -484,10 +576,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#why-this-direction-made-sense" class="md-nav__link">
+  <a href="#approach-and-methodology" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Why This Direction Made Sense
+        Approach and Methodology
       
     </span>
   </a>
@@ -495,10 +587,82 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#challenges-we-anticipate" class="md-nav__link">
+  <a href="#processing-workflow" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Challenges We Anticipate
+        Processing Workflow
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Processing Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-frame-acquisition" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Frame Acquisition
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-background-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Background Comparison
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-initial-foreground-mask-generation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Initial Foreground Mask Generation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-noise-reduction-and-refinement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Noise Reduction and Refinement
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-silhouette-extraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Silhouette Extraction
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#importance-in-gait-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Importance in Gait Analysis
       
     </span>
   </a>
@@ -506,10 +670,32 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#whats-ahead" class="md-nav__link">
+  <a href="#output-characteristics" class="md-nav__link">
     <span class="md-ellipsis">
       
-        What’s Ahead
+        Output Characteristics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#challenges-and-limitations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Challenges and Limitations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusion
       
     </span>
   </a>
@@ -533,37 +719,54 @@
 
 
 
-<h1 id="beginning-our-computer-vision-project-from-ideas-to-direction">Beginning Our Computer Vision Project: From Ideas to Direction</h1>
-<p>When we started the Computer Vision Lab, our first task wasn’t coding or building models. It was figuring out what kind of real-world problem could actually be explored using classical computer vision techniques. Instead of rushing into development, our team spent time discussing different domains and understanding what was realistically possible within the scope of the course.</p>
-<p>At the beginning, we explored several directions. Some ideas revolved around traffic monitoring and smart surveillance, while others focused on medical imaging. Although these topics sounded exciting, many of them depended heavily on large datasets or deep learning pipelines. Since our goal was to work primarily with classical computer vision methods, we realized that these problems might not be the best fit.</p>
-<p>This pushed us to think differently. Rather than looking for something complex just for the sake of complexity, we wanted a problem where motion, patterns, and visual features could be analyzed in a more interpretable way.</p>
+<h1 id="03-extracting-the-foreground-for-gait-analysis">03 Extracting the Foreground for Gait Analysis</h1>
+<h2 id="overview">Overview</h2>
+<p>In any vision-based gait analysis system, the primary objective is to study the motion of a person while minimizing the influence of the surrounding environment. Raw video data contains a large amount of irrelevant information such as walls, furniture, and lighting variations, which do not contribute to understanding human motion. Therefore, it becomes essential to isolate the subject from the background before performing further analysis.</p>
+<p>Foreground extraction is the stage responsible for this separation. By isolating only the moving subject, the system ensures that subsequent processing steps operate on clean and meaningful data. This significantly improves both the efficiency and accuracy of gait analysis.</p>
 <hr />
-<h2 id="moving-towards-gait-analysis">Moving Towards Gait Analysis</h2>
-<p>During our discussions, we came across the concept of analyzing human walking patterns. The idea of studying gait stood out because walking naturally contains motion, rhythm, and measurable changes over time. It also connects well with topics like background subtraction, feature extraction, and temporal analysis that we were learning in class.</p>
-<p>In many rehabilitation environments, therapists observe how patients walk to understand balance or recovery progress. However, visual observation alone can be inconsistent, especially when trying to compare multiple walking sessions. This made us wonder whether a simple vision-based system could help describe walking patterns more objectively.</p>
+<h2 id="background-subtraction-concept">Background Subtraction Concept</h2>
+<p>Foreground extraction in this work is based on the concept of background subtraction. This technique involves maintaining a reference model of the scene without any moving objects and comparing incoming video frames against this model.</p>
+<p>Whenever a new frame is processed, the system identifies regions that deviate from the background. These deviations are interpreted as motion and are classified as foreground. Since human walking involves continuous motion, this method is effective in capturing the subject’s movement.</p>
+<p>One of the key assumptions in background subtraction is that the camera remains stationary. When this condition is satisfied, the background remains relatively consistent, allowing the system to reliably detect moving elements.</p>
 <hr />
-<h2 id="our-approach">Our Approach</h2>
-<p>Instead of building a complicated deep learning system, we decided to design a structured pipeline based on classical computer vision.</p>
-<p>The project begins with collecting walking videos captured from a stable viewpoint. These videos act as the foundation of the system. From there, the focus shifts to processing frames to make motion easier to analyze. This includes reducing noise, simplifying visual information, and isolating the moving subject from the background.</p>
-<p>Once the motion is clear, the next goal is to extract meaningful gait features. Walking is not just a single frame problem; it involves analyzing changes across time. By observing movement patterns across frames, we aim to compute indicators such as walking speed, step frequency, and symmetry in motion.</p>
+<h2 id="approach-and-methodology">Approach and Methodology</h2>
+<p>Instead of treating the background as completely static, a probabilistic approach is used to model it. Each pixel in the image is represented using a statistical distribution that evolves over time. This allows the system to adapt to gradual changes in lighting or minor environmental motion.</p>
+<p>Such adaptability is crucial in real-world scenarios where conditions are rarely perfectly controlled. For example, slight illumination changes or subtle background movements should not be mistaken for significant motion. The chosen method effectively balances sensitivity to motion with robustness against noise.</p>
 <hr />
-<h2 id="why-this-direction-made-sense">Why This Direction Made Sense</h2>
-<p>One of the reasons we chose this problem is that it allows us to apply core computer vision concepts without relying on heavy computation. The emphasis is on understanding motion rather than simply achieving high prediction accuracy.</p>
-<p>Working with classical techniques also helps us better understand how visual features are formed and how movement can be translated into measurable information.</p>
+<h2 id="processing-workflow">Processing Workflow</h2>
+<p>The foreground extraction process can be understood as a sequence of well-defined steps:</p>
+<h3 id="1-frame-acquisition">1. Frame Acquisition</h3>
+<p>The input video is processed frame by frame. Each frame serves as an individual snapshot of the scene at a given time.</p>
+<h3 id="2-background-comparison">2. Background Comparison</h3>
+<p>Every frame is compared with the learned background model. Pixels that differ significantly are marked as potential foreground regions.</p>
+<h3 id="3-initial-foreground-mask-generation">3. Initial Foreground Mask Generation</h3>
+<p>Based on the comparison, a binary mask is generated where moving regions are highlighted. This mask provides a rough estimate of the subject’s location.</p>
+<h3 id="4-noise-reduction-and-refinement">4. Noise Reduction and Refinement</h3>
+<p>The initial mask often contains unwanted artifacts such as isolated pixels or small clusters caused by noise. These are removed through refinement techniques, resulting in a smoother and more coherent representation.</p>
+<h3 id="5-silhouette-extraction">5. Silhouette Extraction</h3>
+<p>From the refined mask, the largest connected region is identified, which typically corresponds to the human subject. This region is extracted to form a clean silhouette that represents the subject’s shape and motion.</p>
 <hr />
-<h2 id="challenges-we-anticipate">Challenges We Anticipate</h2>
-<p>As we begin building the system, we expect several practical challenges:</p>
-<ul>
-<li>Maintaining consistent camera positioning  </li>
-<li>Handling background variations  </li>
-<li>Detecting subtle differences in walking patterns  </li>
-<li>Ensuring the analysis remains stable across multiple videos  </li>
-</ul>
-<p>These challenges are part of the learning process and will guide how we refine the pipeline over time.</p>
+<h2 id="importance-in-gait-analysis">Importance in Gait Analysis</h2>
+<p>Foreground extraction plays a foundational role in gait analysis. By simplifying the visual data, it allows the system to focus on the essential aspects of movement. The extracted silhouette captures key information such as body posture, limb movement, and overall motion dynamics.</p>
+<p>This simplified representation is particularly useful for:
+- Tracking the position of the subject over time<br />
+- Generating motion signals<br />
+- Identifying periodic patterns in walking<br />
+- Extracting meaningful gait features  </p>
+<p>Without this step, subsequent analysis would be significantly more complex and prone to errors.</p>
 <hr />
-<h2 id="whats-ahead">What’s Ahead</h2>
-<p>This blog marks the starting point of our project journey. In the next posts, we will explore the fundamentals of human gait, the design of our computer vision pipeline, and the steps involved in turning raw video into meaningful analysis.</p>
-<p>The goal is not only to build a working system but also to understand how classical computer vision can be applied to real movement-based problems.</p>
+<h2 id="output-characteristics">Output Characteristics</h2>
+<p>The output of this stage is a binary representation of the subject, commonly referred to as a silhouette. In this representation, the subject is clearly distinguished from the background, while unnecessary details are removed.</p>
+<p>This not only reduces computational complexity but also enhances the interpretability of the data. The silhouette serves as a compact yet informative input for further processing stages.</p>
+<hr />
+<h2 id="challenges-and-limitations">Challenges and Limitations</h2>
+<p>Although background subtraction is effective, it is not without challenges. One of the primary issues is sensitivity to sudden lighting changes, which can lead to incorrect detection of foreground regions. Shadows also pose a problem, as they may be incorrectly classified as part of the subject.</p>
+<p>Additionally, the method relies on a fixed camera setup. Any camera movement can disrupt the background model and reduce accuracy. In scenarios with multiple moving objects, distinguishing the subject from other elements can also become difficult.</p>
+<p>Despite these limitations, careful tuning and refinement can significantly improve performance.</p>
+<hr />
+<h2 id="conclusion">Conclusion</h2>
+<p>Foreground extraction is a critical step that bridges raw video input and meaningful motion analysis in a gait analysis system. By isolating the moving subject from the background, it provides a clean and focused representation of human motion.</p>
+<p>The use of adaptive background modeling ensures robustness in practical conditions, while refinement techniques enhance the quality of the extracted silhouette. This processed output forms the basis for all subsequent stages, making foreground extraction one of the most important components in the overall pipeline.</p>
 
 
 

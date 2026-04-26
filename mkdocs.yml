@@ -12,4 +12,7 @@ nav:
 
   - Project Blogs:
       - Project Journey: project-journey.md
+      - Video Preprocessing: second.md
       - Foreground Extraction: third.md
+      - Gait Analysis: four.md
+      - Deployment and misc: five.md
